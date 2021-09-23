@@ -30,15 +30,16 @@ int main(void)
 	GPIOA->MODER |=GPIO_MODER_MODER5_0;
 
 	//while(1){
-				//for (volatile uint32_t i = 0; i < 100000; i++) {}
-				//GPIOA->ODR ^= (1<<5); // toggle
-			//}
+					//for (volatile uint32_t i = 0; i < 100000; i++) {}
+					//GPIOA->ODR ^= (1<<5); // toggle
+				//}
+
 	for(;;)
 	{
-		uint8_t pole[32]  = {1,0,1,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0 };
-			for(uint8_t i=0;i<32;i++)
+		uint32_t pole =0b1010100111011101110010101000000;
+			for(uint32_t i=0;i<32;i++)
 			{
-					if (pole[i] == 1)
+					if (pole & (1<<(31-i)))
 						GPIOA->BSRR = (1<<5);
 					else
 						GPIOA->BRR = (1<<5);
