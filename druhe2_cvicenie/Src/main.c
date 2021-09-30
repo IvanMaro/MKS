@@ -73,6 +73,7 @@ void tlacitka(void){
 			GPIOB->BSRR = (1<<0);
 		}
 		old_s2 = new_s2;
+		debounce2 = Tick;
 	}
 
 	//S1
@@ -101,6 +102,7 @@ void tlacitka(void){
 		}
 		old_s1 = new_s1;
 		*/
+		debounce1 = Tick;
 	}
 	//LED2
 	if (Tick > off_time) {
