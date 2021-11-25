@@ -916,3 +916,10 @@
 2021-11-18 10:03:24,165 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.TRACE(SWVClient.java:759)
 2021-11-18 10:03:24,168 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.createProtocolPacket(SWVClient.java:468)
 2021-11-18 10:03:24,171 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:366)
+2021-11-25 07:06:49,704 [INFO] Activator:177 - 
+
+
+2021-11-25 07:06:49,707 [INFO] Activator:178 - !SESSION log4j initialized
+2021-11-25 07:06:55,042 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-11-25 07:06:55,044 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-11-25 07:06:55,047 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
